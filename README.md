@@ -24,14 +24,17 @@ The repository is organised by **themes** ( AWS, vSphere, Docker, ect..) and by 
     │   ├── python/
     │   ├── bash/
     │   └── powershell/
+    │
     ├── Ansible/
     │   ├── python/
     │   ├── bash/
     │   └── powershell/
+    │
     ├── Docker/
     │   ├── python/
     │   ├── bash/
     │   └── powershell/
+    │
     └ and so on..
 
 ## ⚙️ Requirements
