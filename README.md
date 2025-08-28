@@ -12,7 +12,7 @@ The objectif is to centralize tools that are reusable to simplify life.
 - [💻 ServiceNow](ServiceNow/)
 - [🖥️ vSphere](vSphere/)
 - [⚙️ Requirements](#-Requirements)
-- [📜 Licence](#-Licence)
+- [📜 License](#-License)
 
 ---
 
@@ -22,4 +22,4 @@ The repository is organised by **themes** ( AWS, vSphere, Docker, ect..) and by 
 
 ## ⚙️ Requirements
 
-## 📜 Licence
+## 📜 License
