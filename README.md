@@ -5,7 +5,7 @@ The objectif is to centralize tools that are reusable to simplify life.
 
 ## 📑 Table of Contents
 - [📂 Structure](#-Structure)
-- [☁️ AWS](#AWS/)
+- [☁️ AWS](AWS/)
 - [🖥️ vSphere](vSphere/)
 - [💻 Nagios](Nagios/)
 - [💻 ServiceNow](ServiceNow/)
