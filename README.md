@@ -32,7 +32,6 @@ The repository is organised by **themes** ( AWS, vSphere, Docker, ect..) and by 
     │   ├── python/
     │   ├── bash/
     │   └── powershell/
-    └ ...
-    and so on..
+    └ and so on..
 
 ## ⚙️ Requirements
