@@ -20,20 +20,14 @@ The objectif is to centralize tools that are reusable to simplify life.
 The repository is organised by **themes** ( AWS, vSphere, Docker, ect..) and by **languages** ( Python, Bash, Powershell ).
 
     ├── AWS/
-    │   ├── python/
-    │   ├── bash/
-    │   └── powershell/
-    │
+    │      ├── python/
+    │      └── bash/
     ├── Ansible/
-    │   ├── python/
-    │   ├── bash/
-    │   └── powershell/
-    │
     ├── Docker/
-    │   ├── python/
-    │   ├── bash/
-    │   └── powershell/
-    │
+    ├── Nagios/
+    │      ├── python/
+    │      ├── bash/
+    │      └── powershell/
     └ and so on..
 
 ## ⚙️ Requirements
