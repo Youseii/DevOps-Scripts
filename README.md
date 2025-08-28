@@ -1,21 +1,24 @@
 # 🚀 DevOps Scripts Collection
 
-Bienvenue dans ce dépôt regroupant différents **scripts et snippets utiles en DevOps**, couvrant plusieurs environnements et langages.  
-L’objectif est de centraliser des outils réutilisables pour faciliter l’automatisation, l’administration et la gestion des infrastructures.
-
+Welcome to this repository having many **scripts usefull in a DevOps life**, using multiples languages.
+The objectif is to centralize tools that are reusable to simplify life.
 ---
 
-## 📑 Table des matières
-- [📂 Structure du dépôt](#-structure-du-dépôt)
+## 📑 Table of Contents
+- [📂 Structure](#-Structure)
 - [☁️ AWS](#️-aws)
 - [🖥️ vSphere](#️-vsphere)
+- [💻 Nagios](#-nagios)
+- [💻 ServiceNow](#-servicenow)
 - [🐳 Docker](#-docker)
-- [💻 Langages utilisés](#-langages-utilisés)
-- [⚙️ Prérequis](#-prérequis)
+- [🛠 Ansible](#-ansible)
+- [⚙️ Requirements](#-Requirements)
 - [📜 Licence](#-licence)
 
 ---
 
-## 📂 Structure du dépôt
+## 📂 Structure 
 
-Le repo est organisé par **thématique** (AWS, vSphere, Docker) puis par **langage** (Python, Bash, PowerShell).
+The repository is organised by **themes** ( AWS, vSphere, Docker, ect..) and by **languages** ( Python, Bash, Powershell).
+
+## ⚙️ Requirements
