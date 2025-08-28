@@ -19,6 +19,6 @@ The objectif is to centralize tools that are reusable to simplify life.
 
 ## 📂 Structure 
 
-The repository is organised by **themes** ( AWS, vSphere, Docker, ect..) and by **languages** ( Python, Bash, Powershell).
+The repository is organised by **themes** ( AWS, vSphere, Docker, ect..) and by **languages** ( Python, Bash, Powershell ).
 
 ## ⚙️ Requirements
