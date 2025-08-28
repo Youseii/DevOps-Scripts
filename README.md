@@ -5,14 +5,14 @@ The objectif is to centralize tools that are reusable to simplify life.
 
 ## 📑 Table of Contents
 - [📂 Structure](#-Structure)
-- [☁️ AWS](#️-aws)
-- [🖥️ vSphere](#️-vsphere)
-- [💻 Nagios](#-nagios)
-- [💻 ServiceNow](#-servicenow)
-- [🐳 Docker](#-docker)
-- [🛠 Ansible](#-ansible)
+- [☁️ AWS](#️-AWS)
+- [🖥️ vSphere](#️-vSphere)
+- [💻 Nagios](#-Nagios)
+- [💻 ServiceNow](#-ServiceNow)
+- [🐳 Docker](#-Docker)
+- [🛠 Ansible](#-Ansible)
 - [⚙️ Requirements](#-Requirements)
-- [📜 Licence](#-licence)
+- [📜 Licence](#-Licence)
 
 ---
 
