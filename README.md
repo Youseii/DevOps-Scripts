@@ -38,4 +38,4 @@ The repository is organised by **themes** ( AWS, vSphere, Docker, ect..) and by 
 
 ## ⚙️ Requirements
 
-Depending on the Project you check, you will need specific things. A readme in every repertory will tell you what you need, right now I can only tell you to have a computer, it's better if he work.
+Depending on the project you check, you will need specifics things. A **README** in every folder will tell you what you need, right now I can only tell you to have a computer, it is better if he work.
