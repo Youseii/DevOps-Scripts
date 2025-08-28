@@ -6,11 +6,11 @@ The objectif is to centralize tools that are reusable to simplify life.
 ## 📑 Table of Contents
 - [📂 Structure](#-Structure)
 - [☁️ AWS](AWS/)
-- [🖥️ vSphere](vSphere/)
+- [🛠 Ansible](Ansible/)
+- [🐳 Docker](Docker/)
 - [💻 Nagios](Nagios/)
 - [💻 ServiceNow](ServiceNow/)
-- [🐳 Docker](Docker/)
-- [🛠 Ansible](Ansible/)
+- [🖥️ vSphere](vSphere/)
 - [⚙️ Requirements](#-Requirements)
 - [📜 Licence](#-Licence)
 
