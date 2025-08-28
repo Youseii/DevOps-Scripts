@@ -4,7 +4,6 @@ Welcome to this repository having many **scripts usefull in a DevOps life**, usi
 The objectif is to centralize tools that are reusable to simplify life.
 
 ## 📑 Table of Contents
-- [📂 Structure](#-Structure)
 - [☁️ AWS](AWS/)
 - [🛠 Ansible](Ansible/)
 - [🐳 Docker](Docker/)
