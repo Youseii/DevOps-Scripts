@@ -12,8 +12,6 @@ L’objectif est de centraliser des outils réutilisables pour faciliter l’aut
 - [🐳 Docker](#-docker)
 - [💻 Langages utilisés](#-langages-utilisés)
 - [⚙️ Prérequis](#-prérequis)
-- [🚀 Utilisation](#-utilisation)
-- [🛠 Contributions](#-contributions)
 - [📜 Licence](#-licence)
 
 ---
