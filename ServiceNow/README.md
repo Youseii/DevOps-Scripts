@@ -1,8 +1,10 @@
 ## 🔧 ServiceNow
 
-Scripts in this section are using the ServiceNow API to get metrics and data usefull for are automation project. ( for example, CIs, Incidents, Changes, ..).
+Scripts in this section are using the ServiceNow API to get metrics and data usefull for are automation project. ( for example, CIs, Incidents, Changes, ..)
 
 ### 📂 Configuration requise
+
+For the python environment, I'm using `python3.12` using mostly `requests`, `sys`, `json` packages.
 
 To execute these scripts, you will necessary need a `credentials.json` file that contains sensitive information ( password, username, client_secret, ..)
 
