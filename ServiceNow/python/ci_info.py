@@ -9,7 +9,7 @@ import sys
 import ServiceNowModule
 
 
-def get_ci_info(token, url_instance, instance_id):
+def get_ci_info_by_id(token, url_instance, instance_id):
     """
    Get CI information from its ID
    @param token: ServiceNow API token
@@ -40,4 +40,4 @@ if __name__ == '__main__':
     auth_sn = test22.auth_service_now(url_instance, sys.argv[1])
     sntoken = auth_sn['access_token']
 
-    print(get_ci_info(sntoken, url_instance, sys.argv[2]))
+    print(get_ci_info_by_id(sntoken, url_instance, sys.argv[2]))
