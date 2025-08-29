@@ -1,3 +1,9 @@
+"""
+Parameters need:
+- the credetials file json
+- the ID of the CI
+"""
+
 import requests
 import sys
 import ServiceNowModule
