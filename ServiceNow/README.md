@@ -1,19 +1,21 @@
-In the ServiceNow part, you will obviously need credentials access that we are going to put in a json file named 'credentials.json'. It is necessary to have the credentials.json due to the access needed for the API to get metrics of what ServiceNow can offer us. In every scripts, we will have to specify the credentials.json in the arguments.
+## 🔧 ServiceNow
 
-Create it in your local env using this format:
+Les scripts de cette section permettent d’interagir avec l’API ServiceNow afin de récupérer des métriques et informations utiles (par exemple, des CIs).  
 
-    {
-        "credentials": {
-          "Oauth" : {
-            "client_id": "",
-            "client_secret": "",
-            "grant_type": "password",
-            "username": "",
-            "password": ""  
-            }
-         }
+### 📂 Configuration requise
+Afin de pouvoir exécuter les scripts, il est nécessaire de disposer d’un fichier `credentials.json` contenant les informations d’authentification.  
+
+Créez ce fichier dans votre environnement local avec le format suivant :  
+
+```json
+{
+  "credentials": {
+    "Oauth": {
+      "client_id": "",
+      "client_secret": "",
+      "grant_type": "password",
+      "username": "",
+      "password": ""
     }
-
-Example script execution:
-
-    python3 get_ci_by_name.py credentials.json [name_of_CI]
+  }
+}
