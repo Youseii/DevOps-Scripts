@@ -37,7 +37,7 @@ if __name__ == '__main__':
     url_instance = '' # MODIFY THIS VALUE by the url of your instance
 
     # token, specify the credential file in parameters of the script
-    auth_sn = test22.auth_service_now(url_instance, sys.argv[1])
+    auth_sn = ServiceNowModule.auth_service_now(url_instance, sys.argv[1])
     sntoken = auth_sn['access_token']
 
     print(get_ci_info_by_id(sntoken, url_instance, sys.argv[2]))
