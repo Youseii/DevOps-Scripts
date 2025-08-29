@@ -6,7 +6,7 @@ Scripts in this section are using the ServiceNow API to get metrics and data use
 
 For the python environment, I'm using `python3.12` using mostly `requests`, `sys`, `json` packages.
 
-To execute these scripts, you will necessary need a `credentials.json` file that contains sensitive information ( password, username, client_secret, ..)
+To execute these scripts, you will necessary need the `credentials.json` file that contains sensitive information ( password, username, client_secret, ..), it is mandatory to have it a specify it it in arguments of the script's call. 
 
 Create this file in your local environment using this format:
 
