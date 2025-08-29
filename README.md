@@ -8,7 +8,7 @@ The objectif is to centralize tools that are reusable to simplify life.
 - [🛠 Ansible](Ansible/)
 - [🐳 Docker](Docker/)
 - [💻 Nagios](Nagios/)
-- [💻 ServiceNow](ServiceNow/)
+- [🔧 ServiceNow](ServiceNow/)
 - [🖥️ vSphere](vSphere/)
 - [⚙️ Requirements](#-Requirements)
 - [📜 License](/LICENSE)
