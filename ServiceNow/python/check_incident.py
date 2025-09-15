@@ -73,8 +73,8 @@ if __name__ == '__main__':
     auth_sn = ServiceNowModule.auth_service_now(url_instance, sys.argv[1])
     sntoken = auth_sn['access_token']
 
-    print("========", check_for_open_incident(sntoken, url_instance, "incident_name_title"))
-    print("-------------", get_incident_by_number(sntoken, url_instance, "incident_number"))
+    print(check_for_open_incident(sntoken, url_instance, "incident_name_title"))
+    print(get_incident_by_number(sntoken, url_instance, "incident_number"))
     
     # Opening an personalize incident
     """open_incident(sntoken, url_instance, "IT_TEAM", "ServiceNow_service", "Linux_VM_1", "Linux_VM_1 is not starting",
