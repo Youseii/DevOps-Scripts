@@ -9,7 +9,7 @@ import sys, json
 import ServiceNowModule
 
 
-def get_ci_by_name(token, url_instance, ci_name):
+def get_ci_info_by_name(token, url_instance, ci_name):
     """
     Get CI information with a search based on the name.
     Return a maximum of 1 entry
@@ -44,4 +44,4 @@ if __name__ == '__main__':
     auth_sn = ServiceNowModule.auth_service_now(url_instance, sys.argv[1])
     sntoken = auth_sn['access_token']
 
-    print(get_ci_by_name(sntoken, url_instance, sys.argv[2]))
+    print(get_ci_info_by_name(sntoken, url_instance, sys.argv[2]))
