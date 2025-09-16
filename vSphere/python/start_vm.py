@@ -36,8 +36,6 @@ def start_vm(token_auth, url_instance, vm_name):
 
 if __name__ == '__main__':
     url_instance = "" # To MODIFY
-
-    # sys.argv[1] for the credential file, argv[2] for the instance
     credential_file = vSphereModule.auth_vsphere(url_instance, 'credentials.json')
 
     #print(get_vm_id(credential_file, url_instance, "PUT THE VM NAME"))
