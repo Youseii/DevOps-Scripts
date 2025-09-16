@@ -31,7 +31,7 @@ def get_incident_by_number(token, url_instance, incident_number):
     response = requests.get(url, headers=headers)
 
     if response.status_code != 200:
-        print("error check of open incident using the title")
+        print("error check of open incident using the number (Change ID)")
         print('Status:', response.status_code, 'Headers:', response.headers, 'Error Response:', response.json())
         exit()
     response = response.json()
