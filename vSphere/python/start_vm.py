@@ -1,5 +1,6 @@
 import requests
 import json
+import sys
 import vSphereModule
 
 
@@ -31,12 +32,12 @@ def start_vm(token_auth, url_instance, vm_name):
     elif resp_code == '400':
         return 'The vm is already powered on'
     else:
-        raise RuntimeError(f'ErrorRest{resp_code}')
+        raise RuntimeError(f'Error Rest {resp_code}')
 
 
 if __name__ == '__main__':
     url_instance = "" # To MODIFY
-    credential_file = vSphereModule.auth_vsphere(url_instance, 'credentials.json')
+    credential_file = vSphereModule.auth_vsphere(url_instance, sys.argv[1])
 
-    #print(get_vm_id(credential_file, url_instance, "PUT THE VM NAME"))
-    print(start_vm(credential_file, url_instance, "PUT THE VM NAME"))
+    #print(get_vm_id(credential_file, url_instance, sys.argv[1]))
+    print(start_vm(credential_file, url_instance, sys.argv[2]))
