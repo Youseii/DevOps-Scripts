@@ -1,4 +1,4 @@
-## 🔧 VMware vSphere
+## 🖥️ VMware vSphere
 
 Scripts in this section are using the VMware API to get metrics and data usefull for are automation project. ( for example, start/stop, Backup, ..)
 
