@@ -22,5 +22,5 @@ Create this file in your local environment using this format:
 ```
 Example of how to execute a scripts:
 
-    python3 start_vm.py credentials.json [name_of_VM]
+    python3 start_vm.py [name_of_VM]
 
