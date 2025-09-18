@@ -6,11 +6,11 @@ import vSphereModule
 
 def get_vm_id(token_auth, url_instance, vm_name):
 
-    resp = requests.get(f"https://{url_instance}/rest/vcenter/vm", headers={"vmware-api-session-id": token_auth})
+    resp = requests.get(f"https://{url_instance}/api/vcenter/vm", headers={"vmware-api-session-id": token_auth})
     list_vms = json.loads(str(resp.text))
     
     # Get the list of all the VMs
-    for vm in list_vms['value']:
+    for vm in list_vms:
         try:
             if vm['name'] == vm_name:
                 return vm['vm']
