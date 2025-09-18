@@ -33,5 +33,5 @@ if __name__ == '__main__':
 
     credential_file = vSphereModule.auth_vsphere(url_instance, sys.argv[1])
 
-    id_vm = get_vm_id(credential_file, url_instance, "PUT NAME OF VM")
+    id_vm = get_vm_id(credential_file, url_instance, sys.argv[2])
     print(get_vm_info(credential_file, url_instance, id_vm))
