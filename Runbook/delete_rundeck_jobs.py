@@ -7,7 +7,7 @@ from urllib3.exceptions import InsecureRequestWarning
 
 requests.packages.urllib3.disable_warnings(category=InsecureRequestWarning)
 
-instance = "" # TO EDIT
+instance_name = "" # TO EDIT
 
 
 class CustomHttpAdapter(requests.adapters.HTTPAdapter):
@@ -28,7 +28,7 @@ def get_legacy_session():
     return session
 
 
-def rundeck_get_api_call(instance, url, data=""):
+def get_api_call(instance, url, data=""):
     headers = {"Content-Type": "application/json",
                "Accept": "application/json",
                "X-Rundeck-Auth-Token": sys.argv[1]}
@@ -39,7 +39,7 @@ def rundeck_get_api_call(instance, url, data=""):
     return data
 
 
-def rundeck_delete_api_call(instance, url, data=""):
+def delete_api_call(instance, url, data=""):
     headers = {"Content-Type": "application/json",
                "Accept": "application/json",
                "X-Rundeck-Auth-Token": sys.argv[1]}
@@ -48,13 +48,13 @@ def rundeck_delete_api_call(instance, url, data=""):
     return r
 
 # List every project in Rundeck
-projects = rundeck_get_api_call(rdk_instance, f"/api/45/projects")
+projects = get_api_call(instance_name, f"/api/45/projects")
 
 for project in projects:
     print(f"\n -------- PROJECT: {project['name']} ------ \n")
 
     # List the complete definition of every job
-    jobs = rundeck_get_api_call(rdk_instance, f"/api/45/project/{project['name']}/jobs/export")
+    jobs = get_api_call(instance_name, f"/api/45/project/{project['name']}/jobs/export")
     for job in jobs:
         s = []
         for key, value in job.items():
@@ -72,5 +72,5 @@ for project in projects:
                 else:
                     print(f"{sys.argv[2]} has been detected in {s} for the job {job['name']}")
                     # Delete jobs
-                    #rundeck_delete_api_call(rdk_instance, f"/api/45/job/{job['id']}")
+                    #delete_api_call(instance_name, f"/api/45/job/{job['id']}")
                     #print(f"----> {job['name']} has been deleted\n")
