@@ -7,11 +7,10 @@ from urllib3.exceptions import InsecureRequestWarning
 
 requests.packages.urllib3.disable_warnings(category=InsecureRequestWarning)
 
-# Instance of Rundeck ( Can be Rundeck maintenance, Rundeck Prod and Rundeck SAAS )
-rdk_instance = "" # To edit
+instance_name = "" # To edit
 
 
-def rundeck_get_api_call(instance, url, data=""):
+def get_api_call(instance, url, data=""):
     headers = {"Content-Type": "application/json",
                "Accept": "application/json",
                "X-Rundeck-Auth-Token": sys.argv[1]}
@@ -23,7 +22,7 @@ def rundeck_get_api_call(instance, url, data=""):
 
 
 # List every project in Rundeck
-projects = rundeck_get_api_call(rdk_instance, f"/api/45/projects")
+projects = get_api_call(instance_name, f"/api/45/projects")
 
 # List who contained every jobs' name
 l_name = []
@@ -33,7 +32,7 @@ for project in projects:
     l_name.clear()
 
     # List every Job in a Rundeck Project
-    jobs = rundeck_get_api_call(rdk_instance, f"/api/45/project/{project['name']}/jobs")
+    jobs = get_api_call(instance_name, f"/api/45/project/{project['name']}/jobs")
     for job in jobs:
         l_name.append(job['name'])
 
